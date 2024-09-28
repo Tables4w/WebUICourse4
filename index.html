@@ -2,15 +2,16 @@
 
 <html lang="ru">
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title> Практическое задание №3 </title>
+    <title> Практическое задание №4 </title>
   </head>
 
   <!-- Фон взят из открытой галереи: https://projects.verou.me/css3patterns/-->
   <body class="body">
-  <header>
+  <header class="container-fluid d-flex mb-3 flex-row order-1">
       <img class="logoblock" src="logo.gif" alt="HTML/CSS практика">
-      <h1 class="logotext"> Практическое задание №3 </h1>
+      <h1 class="logotext"> Практическое задание №4 </h1>
 
       <!--Навбар для гориз. ориентации-->
       <nav class="navdesk">
@@ -18,29 +19,27 @@
         <a class="navrefer" href="#forma"> Форма </a>
         <a class="navrefer" href="#refer"> Ссылки </a>
       </nav>
-
   </header>
 
-  <div class="midblocks">
-
+  <div class="col-md-12 container gy-3 d-flex flex-column">
     <!--Навбар для вертикальной ориентации-->
-    <nav class="navmobile">
+    <nav class="row text-center midblocks mb-3 mt-3 navmobile">
       <a class="navrefer" href="#tab"> Таблица </a>
       <a class="navrefer" href="#forma"> Форма </a>
       <a class="navrefer" href="#refer"> Ссылки </a>
     </nav>
 
-    <div id="refer" class="referblock">
+    <div id="refer" class="row text-center midblocks mb-3 mt-3 referblock">
       <h1 class="midheader"> Ссылки </h1>
       <ul>
         <li><a href="http://www.kubsu.ru/"> 1) Сайт КубГУ (протокол http) </a></li>
         <li><a href="https://www.kubsu.ru/"> 2) Сайт КубГУ (протокол https) </a></li>
         <li><a href="http://www.kubsu.ru/">  <img src="kubsu.jpg" alt="Красивое картинко" style="width: 300px;"> </a></li>
-        <li><a href="/WebUICourse2/inner.html"> 4) Внутренняя страница </a></li>
-        <li><a href="/WebUICourse2/index.html"> 5) Главная страница </a></li>
+        <li><a href="/WebUICourse4/inner.html"> 4) Внутренняя страница </a></li>
+        <li><a href="/WebUICourse4/index.html"> 5) Главная страница </a></li>
         <li><a href="#list"> 6) Ссылка на фрагмент </a></li>
         <li><a href="http://www.kubsu.ru?login=s0188&email=student@example.com&password=40813"> 7) Ссылка с тремя параметрами </a></li>
-        <li><a href="/WebUICourse2/index.html?id=1441"> 8) Ссылка с параметром id </a></li>
+        <li><a href="/WebUICourse4/index.html?id=1441"> 8) Ссылка с параметром id </a></li>
         <li><a href="./inner.html"> 9) В текущем каталоге </a></li>
         <li><a href="./about/info.html"> 10) В каталоге about </a></li>
         <li><a href="../1layerup.html"> 11) В каталоге на уровень выше </a></li>
@@ -67,8 +66,8 @@
         </map></li>
         <li><a href=""> 16) С пустым href </a></li>
         <li><a> 17) Без href </a></li>
-        <li><a href="/WebUICourse2/index.html" rel="nofollow"> 18) Запрет перехода поисковиков</a></li>
-        <li><!--noindex--><a href="/WebUICourse2/index.html" rel="nofollow"> 19) Запрет индексации поисковиками </a><!--/noindex--></li>
+        <li><a href="/WebUICourse4/index.html" rel="nofollow"> 18) Запрет перехода поисковиков</a></li>
+        <li><!--noindex--><a href="/WebUICourse4/index.html" rel="nofollow"> 19) Запрет индексации поисковиками </a><!--/noindex--></li>
         <li><ol id="list">
           <li><a href="https://ru.wikipedia.org/wiki/Красный_цвет">Каждый</a></li>
           <li><a href="https://ru.wikipedia.org/wiki/Оранжевый_цвет">Охотник</a></li>
@@ -81,9 +80,9 @@
         <li><a href="ftp://tablesaw:17413@example.com/users/list.txt"> 21) Ссылка на FTP</a></li>
       </ul>
     </div>
-    <div id="tab" class="tableblock">
+    <div id="tab" class="row text-center midblocks mb-3 mt-3 tableblock">
       <h1 class="midheader"> Таблица </h1>
-      <table>
+      <table class="col-md-11 mb-3 mt-3">
         <tr class="nctr">
           <th></th>
           <th>Цвет</th>
@@ -147,7 +146,8 @@
       </table>
     </div>
 
-    <form id="forma">
+    <div class="row mb-3 mt-3 d-flex order-5">
+    <form id="forma" class="text-center d-flex flex-column">
 
       <!-- Стиль не вынесен, т.к. иначе селектор формы перекроет класс -->
       
@@ -216,8 +216,9 @@
 
       <input type="submit" value="Отправить форму" >
     </form>
-    </div>
-    <footer>
+   </div>
+  </div>
+    <footer class="container-fluid d-flex order-6 flex-row mt-3">
       <a href="https://github.com/Tables4w" class="logotext" style="margin: 43px;"> By: Tables4w </a>
     </footer>
   </body>

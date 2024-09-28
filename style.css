@@ -10,36 +10,22 @@ body{
     background-position:0px 0px, 12px 0px, -1px -1px, 11px -1px;
 }
 
+html{
+    font-size: 15px;
+}
+
 header{
-    display: flex;
-    flex-direction: row;
     background-color:#062249; 
-    order: 1;
     border-bottom: solid;
     border-bottom-color: white;
-    margin-bottom: 20px;
 }
 
 .midblocks{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.midblocks>*{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
     background-color: #264d8f;
     border: solid;
     border-color: white;
 
     /*Не 100% ширина, чтобы были видны границы блока*/
-
-    max-width: 99.7vw;
-    min-width: 99.7vw;
 }
 
 .logoblock{
@@ -52,9 +38,7 @@ header{
 }
 
 .navmobile{
-    display: flex;
-    flex-direction: column;
-    order: 1;
+    order: 2;
     align-items: center;
 }
 
@@ -85,13 +69,11 @@ header{
 }
 
 .tableblock {
-    flex: none;
     order:3;
 }
 
 .midheader{
     color: #aed7fd;
-    font-size: 3em;
 }
 
 p{
@@ -103,11 +85,12 @@ ol{
 }
 
 ul{
+    list-style-type: none;
     color:#aed7fd;
 }
 
 a{
-    transition-duration: 0.25ms;
+    transition-duration: 100ms;
     color:#aed7fd;
 }
 
@@ -115,13 +98,12 @@ a:hover{
     color:#dbecfc;
 }
 
+
 table{
-    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 40px;
-    width: 780px;
-    height: 280px;
+    width: 70%;
+    height: 90%;
     border: solid;
     border-color: #77b5e7;
     border-spacing: 0px;
@@ -143,13 +125,13 @@ th{
 }
 
 label{
-    margin-left: auto;
-    margin-right: auto;
     width: 100px;
     color: #aed7fd;
 }
 
 form {
+    display: flex;
+    align-items: center;
     order: 5;
     border: solid;
     background-color: #264d8f;
@@ -161,7 +143,6 @@ form > * {
     margin-top: 10px;
     margin-bottom: 25px;
     width: 200px;
-    font-size: 20px;
 }
 
 .radio{
@@ -169,10 +150,7 @@ form > * {
 }
 
 footer{
-    display: flex;
-    order: 6;
     background-color:#062249; 
-    margin-top: 20px;
     border-top: solid;
     border-top-color: white;
 }
@@ -191,34 +169,19 @@ footer{
     }
     
     header{
-        display: flex;
-        flex-direction: row;
         background-color:#062249; 
         order: 1;
         border-bottom: solid;
         border-bottom-color: white;
-        margin-bottom: 20px;
         max-height: 120px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
-    
+
     .midblocks{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .midblocks>*{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        align-items: center;
         background-color: #264d8f;
         border: solid;
         border-color: white;
-        max-width: 960px;
-        min-width: 960px;
     }
     
     .logoblock{
@@ -241,6 +204,7 @@ footer{
         display: flex;
         flex: 3;
         flex-direction: row;
+        align-items: center;
         background-color:#264d8f; 
         border-bottom: solid;
         border-bottom-color: white;
@@ -248,18 +212,15 @@ footer{
         border-left-color: white;
         vertical-align: middle;
         order: 3;
-        max-height: 60px;
-        max-width: 960px;
+        max-height: 4.5rem;
+        max-width: 70rem;
         margin-left: auto;
     }
     
     .logotext{
-        display: flex;
-        flex-direction: row;
-        margin-top: 70px;
-        flex:none;
+        margin-top: 4rem;
         order: 2;
-        font-size: 40px;
+        font-size: 2.5rem;
         color:#8fafcc;
         text-decoration: none;
     }
@@ -268,7 +229,6 @@ footer{
         display: flex;
         flex:auto;
         margin-left: 70px;
-        margin-top:0;
         text-decoration: none;
         font-size: 46px;
         color:#aed7fd;
@@ -279,7 +239,6 @@ footer{
     }
     
     .tableblock {
-        flex: none;
         order:4;
     }
     
@@ -297,11 +256,12 @@ footer{
     }
     
     ul{
+        list-style-type: none;
         color:#aed7fd;
     }
     
     a{
-        transition-duration: 0.25ms;
+        transition-duration: 100ms;
         color:#aed7fd;
     }
     
@@ -310,12 +270,10 @@ footer{
     }
     
     table{
-        margin-top: 40px;
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 40px;
-        width: 780px;
-        height: 280px;
+        width: 70%;
+        height: 90%;
         border: solid;
         border-color: #77b5e7;
         border-spacing: 0px;
@@ -337,8 +295,6 @@ footer{
     }
     
     label{
-        margin-left: auto;
-        margin-right: auto;
         width: 100px;
         color: #aed7fd;
     }
@@ -363,10 +319,7 @@ footer{
     }
     
     footer{
-        display: flex;
-        order: 6;
         background-color:#062249; 
-        margin-top: 20px;
         border-top: solid;
         border-top-color: white;
     }
