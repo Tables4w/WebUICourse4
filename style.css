@@ -11,7 +11,7 @@ body{
 }
 
 html{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 header{
@@ -26,6 +26,10 @@ header{
     border-color: white;
 
     /*Не 100% ширина, чтобы были видны границы блока*/
+}
+
+.midcont{
+    max-width: 960px;
 }
 
 .logoblock{
@@ -156,7 +160,7 @@ footer{
 }
 
 @media screen and (min-width: 1024px) {
-    
+
     body{
         margin:0;
         background-color:#062249;
@@ -182,6 +186,10 @@ footer{
         background-color: #264d8f;
         border: solid;
         border-color: white;
+    }
+
+    .midcont{
+        max-width: 960px;
     }
     
     .logoblock{
@@ -213,12 +221,12 @@ footer{
         vertical-align: middle;
         order: 3;
         max-height: 4.5rem;
-        max-width: 70rem;
+        max-width: 960px;
         margin-left: auto;
     }
     
     .logotext{
-        margin-top: 4rem;
+        margin-top: 2.5rem;
         order: 2;
         font-size: 2.5rem;
         color:#8fafcc;
