@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title> Практическое задание №3 </title>
+  </head>
+
+  <!-- Фон взят из открытой галереи: https://projects.verou.me/css3patterns/-->
+  <body class="body">
+  <header>
+      <img class="logoblock" src="logo.gif" alt="HTML/CSS практика">
+      <h1 class="logotext"> Практическое задание №3 </h1>
+
+      <!--Навбар для гориз. ориентации-->
+      <nav class="navdesk">
+        <a class="navrefer" href="#tab"> Таблица </a>
+        <a class="navrefer" href="#forma"> Форма </a>
+        <a class="navrefer" href="#refer"> Ссылки </a>
+      </nav>
+
+  </header>
+
+  <div class="midblocks">
+
+    <!--Навбар для вертикальной ориентации-->
+    <nav class="navmobile">
+      <a class="navrefer" href="#tab"> Таблица </a>
+      <a class="navrefer" href="#forma"> Форма </a>
+      <a class="navrefer" href="#refer"> Ссылки </a>
+    </nav>
+
+    <div id="refer" class="referblock">
+      <h1 class="midheader"> Ссылки </h1>
+      <ul>
+        <li><a href="http://www.kubsu.ru/"> 1) Сайт КубГУ (протокол http) </a></li>
+        <li><a href="https://www.kubsu.ru/"> 2) Сайт КубГУ (протокол https) </a></li>
+        <li><a href="http://www.kubsu.ru/">  <img src="kubsu.jpg" alt="Красивое картинко" style="width: 300px;"> </a></li>
+        <li><a href="/WebUICourse2/inner.html"> 4) Внутренняя страница </a></li>
+        <li><a href="/WebUICourse2/index.html"> 5) Главная страница </a></li>
+        <li><a href="#list"> 6) Ссылка на фрагмент </a></li>
+        <li><a href="http://www.kubsu.ru?login=s0188&email=student@example.com&password=40813"> 7) Ссылка с тремя параметрами </a></li>
+        <li><a href="/WebUICourse2/index.html?id=1441"> 8) Ссылка с параметром id </a></li>
+        <li><a href="./inner.html"> 9) В текущем каталоге </a></li>
+        <li><a href="./about/info.html"> 10) В каталоге about </a></li>
+        <li><a href="../1layerup.html"> 11) В каталоге на уровень выше </a></li>
+        <li><a href="../../2layerup.html"> 12) В каталоге на 2 уровня выше </a></li>
+        <li><p>13) Контекстная <br>Произвольное устройство может считаться <a href="https://ru.wikipedia.org/wiki/Конечный_автомат"> автоматом</a>, если
+          оно обладает следующими свойствами:
+          <br>1) устройство работает в дискретном времени, т.е.
+          поступление входных сигналов и их переработка в выходные
+          сигналы, а также изменение состояний устройства происходит в
+          отдельные дискретные моменты времени, которые обозначаются
+          как
+          t0, t0 + 1 , ... , t0 + i, ...;
+          <br>2) в каждый момент времени устройство находится в одном
+          из своих внутренних состояний;
+          <br>3) сигнал на выходе устройства в некоторый момент времени
+          и его состояние в следующий момент времени однозначно
+          определяются сигналом на входе автомата и его состоянием в
+          текущий момент времени.</p></li>
+        <li><a href="https://stackoverflow.com/#:~:text=Explore%20technical%20topics%20and%20other%20disciplines%20across%20170%2B%20Q%26A%20communities"> 14) Ссылка на фрагмент стороннего сайта</a></li>
+        <li><img src="black.png" width="500" height="289" usemap="#map" alt="Блэки">
+        <map name="map"> 
+        <area shape="rect" alt="Прямоугольник" coords="79,92,184,197" href="https://ru.wikipedia.org/wiki/Прямоугольник">
+        <area shape="circle" alt="Круг" coords="369,145,53" href="https://ru.wikipedia.org/wiki/Круг">
+        </map></li>
+        <li><a href=""> 16) С пустым href </a></li>
+        <li><a> 17) Без href </a></li>
+        <li><a href="/WebUICourse2/index.html" rel="nofollow"> 18) Запрет перехода поисковиков</a></li>
+        <li><!--noindex--><a href="/WebUICourse2/index.html" rel="nofollow"> 19) Запрет индексации поисковиками </a><!--/noindex--></li>
+        <li><ol id="list">
+          <li><a href="https://ru.wikipedia.org/wiki/Красный_цвет">Каждый</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Оранжевый_цвет">Охотник</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Жёлтый_цвет">Желает</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Зелёный_цвет">Знать</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Голубой_цвет">Где</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Синий_цвет">Сидит</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Фиолетовый_цвет">Фазан</a></li>
+        </ol></li>
+        <li><a href="ftp://tablesaw:17413@example.com/users/list.txt"> 21) Ссылка на FTP</a></li>
+      </ul>
+    </div>
+    <div id="tab" class="tableblock">
+      <h1 class="midheader"> Таблица </h1>
+      <table>
+        <tr class="nctr">
+          <th></th>
+          <th>Цвет</th>
+          <th>Форма</th>
+          <th>Размер</th>
+          <th>Ценность</th>
+          <th colspan="2">Описание и примечания</th>
+        </tr>
+        <tr>
+          <th>Груша</th>
+          <th>Зелёный</th>
+          <th>Грушевидная</th>
+          <th>8 см.</th>
+          <th>7</th>
+          <th>Сочный фрукт</th>
+          <th>Растёт на деревьях</th>
+        </tr>
+        <tr class="nctr">
+          <th>Яблоко</th>
+          <th>Жёлтый</th>
+          <th>Круглая</th>
+          <th>6 см.</th>
+          <th>5</th>
+          <th colspan="2">Зелёные вкуснее</th>
+        </tr>
+        <tr>
+          <th>Клубника</th>
+          <th>Красный</th>
+          <th>Коническая</th>
+          <th>2 см.</th>
+          <th>7</th>
+          <th>Красная ягода</th>
+          <th>Растёт на кустах</th>
+        </tr>
+        <tr class="nctr">
+          <th>Банан</th>
+          <th>Жёлтый</th>
+          <th>Продолговатая</th>
+          <th>14 см.</th>
+          <th>8</th>
+          <th>Плод травы</th>
+          <th>Сладкий</th>
+        </tr>
+        <tr>
+          <th>Тыква</th>
+          <th>Оранжевый</th>
+          <th>Скруглённая</th>
+          <th>30 см.</th>
+          <th>9</th>
+          <th>Оранжевый овощ</th>
+          <th>Была каретой</th>
+        </tr>
+        <tr class="nctr">
+          <th>Ежевика</th>
+          <th>Тёмно-фиолетовый</th>
+          <th>Округлая</th>
+          <th>1 см.</th>
+          <th>10</th>
+          <th colspan="2">Недооценена</th>
+        </tr>
+      </table>
+    </div>
+
+    <form id="forma">
+
+      <!-- Стиль не вынесен, т.к. иначе селектор формы перекроет класс -->
+      
+      <h1 class="midheader"> Форма</h1>
+
+      <label>
+        ФИО:
+        <input name="FIO" >
+      </label>
+
+      <label>
+        Номер телефона:
+        <input name="Phone number"
+          type="tel"
+          value="+7" >
+      </label>
+
+      <label>
+        Адрес электронной почты:
+        <input name="Email adress"
+          type="email"
+          placeholder="user@example.org" >
+      </label>
+
+      <label>
+        Дата рождения:
+        <input name="Birth date"
+          type="date" >
+      </label>
+
+      
+      <label> Пол: <br> <input type="radio"
+        name="Rad1" value="Male" >
+        Мужчина</label>
+      <label><input type="radio"
+        name="Rad1" value="Female" >
+        Женщина</label>  
+        
+      <label>
+        Любимый язык программирования:
+        
+        <select name="PL list"
+          multiple="multiple">
+          <option value="1" selected="selected">Prolog</option>
+          <option value="2" >JavaScript</option>
+          <option value="3" >PHP</option>
+          <option value="4" >C++</option>
+          <option value="5" >Java</option>
+          <option value="6" >C#</option>
+          <option value="7" >Haskell</option>
+          <option value="8" >Clojure</option>
+          <option value="9" >Scala</option>
+          <option value="10" >Pascal</option>
+          <option value="11" >Python</option>
+        </select>
+      </label>
+
+      <label>
+        Биография:
+        <textarea name="Bio">Дорогой дневник, </textarea>
+      </label>
+
+      <label><input type="checkbox"
+        name="Contract check" >
+        С контрактом ознакомлен(а)</label>
+
+      <input type="submit" value="Отправить форму" >
+    </form>
+    </div>
+    <footer>
+      <a href="https://github.com/Tables4w" class="logotext" style="margin: 43px;"> By: Tables4w </a>
+    </footer>
+  </body>
+</html>
