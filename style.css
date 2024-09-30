@@ -46,10 +46,6 @@ header{
     align-items: center;
 }
 
-.navdesk{
-    display: none;
-}
-
 .logotext{
     display: flex;
     flex-direction: row;
