@@ -10,25 +10,35 @@
 
   <!-- Фон взят из открытой галереи: https://projects.verou.me/css3patterns/-->
   <body class="body">
+  <div class="container-fluid gx-0"> 
   <header class="container-fluid d-flex mb-3 flex-row order-1">
-      <img class="logoblock" src="logo.gif" alt="HTML/CSS практика">
-      <h1 class="logotext"> Практическое задание №4 </h1>
+    <div class="row gx-0">
+      <img class="logoblock d-flex col-3" src="logo.gif" alt="HTML/CSS практика">
+      <h1 class="logotext d-flex col-7 mt-auto mb-auto"> Практическое задание №4 </h1>
+    </div>
   </header>
 
-  <nav class="row text-center midblocks mb-3 mt-3 navmobile">
+  <!--Адаптивная вёрстка сделана средствами bootstrap за исключением положения navbar
+  при десктопной ориентации (не получилось найти метод, позволяющий работать с абсолютным
+  позиционированием используя только breakpoints). Выравнивание элементов в header 
+  использует col, а media query используется только для смены шрифта таблицы (аналогично
+  не получилось найти метод изменяющий шрифт при нужных breakpoint в bootstrap) и 
+  абсолютного позиционирования navbar-->
+  <nav class="col-11 mx-auto d-flex flex-column text-center navmobile col-md-5">
     <a class="navrefer" href="#tab"> Таблица </a>
     <a class="navrefer" href="#forma"> Форма </a>
     <a class="navrefer" href="#refer"> Ссылки </a>
   </nav>
+  </div>
     
-  <div class="col-md-12 container gy-3 d-flex flex-column midcont">
+  <div class="col-md-11 container gy-3 d-flex flex-column midcont">
     
-    <div id="refer" class="row text-center midblocks mb-3 mt-3 referblock">
+    <div id="refer" class="col-11 mx-auto d-flex flex-column align-items-center midblocks mb-3 mt-3 order-4 order-md-4">
       <h1 class="midheader"> Ссылки </h1>
       <ul>
         <li><a href="http://www.kubsu.ru/"> 1) Сайт КубГУ (протокол http) </a></li>
         <li><a href="https://www.kubsu.ru/"> 2) Сайт КубГУ (протокол https) </a></li>
-        <li><a href="http://www.kubsu.ru/">  <img src="kubsu.jpg" alt="Красивое картинко" style="width: 300px;"> </a></li>
+        <li><a href="http://www.kubsu.ru/">  <img src="kubsu.jpg" alt="Красивое картинко" width="80%" height="20%"> </a></li>
         <li><a href="/WebUICourse4/inner.html"> 4) Внутренняя страница </a></li>
         <li><a href="/WebUICourse4/index.html"> 5) Главная страница </a></li>
         <li><a href="#list"> 6) Ссылка на фрагмент </a></li>
@@ -53,7 +63,7 @@
           определяются сигналом на входе автомата и его состоянием в
           текущий момент времени.</p></li>
         <li><a href="https://stackoverflow.com/#:~:text=Explore%20technical%20topics%20and%20other%20disciplines%20across%20170%2B%20Q%26A%20communities"> 14) Ссылка на фрагмент стороннего сайта</a></li>
-        <li><img src="black.png" width="500" height="289" usemap="#map" alt="Блэки">
+        <li><img src="black.png" width="80%" height="20%" usemap="#map" alt="Блэки">
         <map name="map"> 
         <area shape="rect" alt="Прямоугольник" coords="79,92,184,197" href="https://ru.wikipedia.org/wiki/Прямоугольник">
         <area shape="circle" alt="Круг" coords="369,145,53" href="https://ru.wikipedia.org/wiki/Круг">
@@ -74,7 +84,7 @@
         <li><a href="ftp://tablesaw:17413@example.com/users/list.txt"> 21) Ссылка на FTP</a></li>
       </ul>
     </div>
-    <div id="tab" class="row text-center midblocks mb-3 mt-3 tableblock">
+    <div id="tab" class="col-11 mx-auto d-flex flex-column align-items-center midblocks mb-3 mt-3 order-3 order-md-4">
       <h1 class="midheader"> Таблица </h1>
       <table class="col-md-11 mb-3 mt-3">
         <tr class="nctr">
@@ -140,8 +150,7 @@
       </table>
     </div>
 
-    <div class="row mb-3 mt-3 d-flex order-5">
-    <form id="forma" class="text-center d-flex flex-column">
+    <form id="forma" class="col-11 mx-auto d-flex flex-column align-items-center midblocks mb-3 mt-3 order-5">
 
       <!-- Стиль не вынесен, т.к. иначе селектор формы перекроет класс -->
       
@@ -210,7 +219,6 @@
 
       <input type="submit" value="Отправить форму" >
     </form>
-   </div>
   </div>
     <footer class="container-fluid d-flex order-6 flex-row mt-3">
       <a href="https://github.com/Tables4w" class="logotext" style="margin: 43px;"> By: Tables4w </a>
